@@ -4,9 +4,19 @@
     <button color="primary" mat-button routerLink="/clients">Clients Admin</button>
   </mat-drawer>
   <div class="sidenav-content">
-    <button mat-icon-button (click)="drawer.toggle()">
-      <mat-icon>menu</mat-icon>
-    </button>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <button mat-icon-button (click)="drawer.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span>Business Lending Application</span>
+        <span class="spacer"></span>
+        <button mat-icon-button>
+          <mat-icon>account_circle</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+    
     <router-outlet></router-outlet>
   </div>
 </mat-drawer-container>
