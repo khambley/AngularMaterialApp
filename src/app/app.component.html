@@ -1,6 +1,7 @@
 <mat-drawer-container class="container" autosize>
   <mat-drawer #drawer class="sidenav">
-    <button routerLink="/clients">Clients</button>
+    <p class="logo">Finastra logo</p>
+    <button color="primary" mat-button routerLink="/clients">Clients Admin</button>
   </mat-drawer>
   <div class="sidenav-content">
     <button mat-icon-button (click)="drawer.toggle()">
